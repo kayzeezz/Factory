@@ -6,42 +6,42 @@ public class Clinic {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Choose a pet");
+        System.out.println("Choose a animal");
         System.out.println("1. Dog");
-        System.out.println("2. Cat");
+        System.out.println("2. Bird");
         System.out.println("3. Exit");
         System.out.print("Enter number: ");
         Integer choice = input.nextInt();
 
-        PetRecord petRecord = new PetRecord();
-        Pet pet;
+        AnimalRecord animalRecord = new AnimalRecord();
+        Animal animal;
 
         switch (choice) {
             case 1:
-                pet = new Dog();
-                petRecord.setPetName("Bantay");
-                petRecord.setPetId("P001");
-                petRecord.setPet(pet);
-                ((Dog) pet).setBreed("German shepherd");
+                animal = new Dog();
+                animalRecord.setAnimalName("Milo");
+                animalRecord.setAnimalId("P001");
+                animalRecord.setAnimal(animal);
+                ((Dog) animal).setBreed("Shih tzu");
                 break;
 
             case 2:
-                pet = new Cat();
-                petRecord.setPetName("Muning");
-                petRecord.setPetId("P002");
-                petRecord.setPet(pet);
-                ((Cat) pet).setNoOfLives(9);
+                animal = new Bird();
+                animalRecord.setAnimalName("Kiwi");
+                animalRecord.setAnimalId("P002");
+                animalRecord.setAnimal(animal);
+                ((Bird) animal).setTyoe("small");
                 break;
             case 3:
                 System.exit(0);
 
         }
 
-        System.out.println("Pet id is " + petRecord.getPetId());
-        System.out.println("Pet name is " + petRecord.getPetName());
-        System.out.println("Pet kind: " + petRecord.getPet().getClass().getSimpleName());
-        System.out.println("Communication sound: " + petRecord.getPet().makeSound());
-        System.out.println("Play mode: " + petRecord.getPet().play());
+        System.out.println("Animal id is " + animalRecord.getAnimalId());
+        System.out.println("Animal name is " + animalRecord.getAnimalName());
+        System.out.println("Animal kind: " + animalRecord.getAnimal().getClass().getSimpleName());
+        System.out.println("Communication sound: " + animalRecord.getAnimal().makeSound());
+        System.out.println("Play mode: " + animalRecord.getAnimal().play());
 
 
     }
