@@ -1,6 +1,6 @@
 package factory;
 
-public class Cat implements  Pet{
+public class Tiger implements  Animals{
     private Integer noOfLives;
 
     public Integer getNoOfLives() {
@@ -12,7 +12,7 @@ public class Cat implements  Pet{
     }
     @Override
     public String makeSound() {
-        return "Meow, meow, meow!";
+        return "Rowr, rowr, rowr!";
     }
 
     @Override
