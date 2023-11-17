@@ -6,7 +6,7 @@ public class Clinic {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Choose a animal");
+        System.out.println("Choose an animal");
         System.out.println("1. Dog");
         System.out.println("2. Bird");
         System.out.println("3. Exit");
