@@ -1,6 +1,6 @@
 package factory;
 
-public class Dog implements  Pet{
+public class Dog implements  Animal{
      private String breed;
 
      public String getBreed() {
