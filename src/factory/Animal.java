@@ -1,6 +1,6 @@
 package factory;
 
 public interface Animals {
-    public String makeNoice();
-    public String wild();
+    public String makeSound();
+    public String play();
 }
