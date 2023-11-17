@@ -1,6 +1,6 @@
 package factory;
 
-public class Bird implements  Animals{
+public class Bird implements  Animal{
     private Integer Type;
 
     public Integer getType() {
