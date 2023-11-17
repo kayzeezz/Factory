@@ -17,6 +17,6 @@ public class Bird implements  Animal{
 
     @Override
     public String play() {
-        return "attack moving objects!";
+        return "copy words!";
     }
 }
